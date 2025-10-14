@@ -27,7 +27,7 @@ Bem-vindo ao projeto **FluxoGrama**. Este guia tem como objetivo ajudar na confi
 ### 4. Executar o Projeto
 
 1. Abra seu navegador.
-2. Digite o seguinte URL: [http://localhost/finar](http://localhost/fluxograma).
+2. Digite o seguinte URL: [http://localhost/fluxograma](http://localhost/fluxograma).
 3. O projeto deverá ser carregado e você poderá visualizar a aplicação funcionando.
 
 ## Problemas Comuns
