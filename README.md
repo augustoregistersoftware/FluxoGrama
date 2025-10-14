@@ -1,4 +1,5 @@
 # Projeto FluxoGrama - Guia de Configuração
+<img width="1329" height="908" alt="fluxograma" src="https://github.com/user-attachments/assets/34a49cab-379b-42ca-ab59-a87999cb1204" />
 
 Bem-vindo ao projeto **FluxoGrama**. Este guia tem como objetivo ajudar na configuração inicial do ambiente de desenvolvimento para que você possa executar o projeto corretamente.
 
