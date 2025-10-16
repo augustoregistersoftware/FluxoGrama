@@ -1,4 +1,6 @@
-<style>
+ <style>
+
+
     body {
       font-family: Arial, sans-serif;
       background: #f7f8fc;
@@ -38,31 +40,59 @@
 
     .line {
       width: 2px;
+      height: 32px;
+      background: #7b6ef6;
+      margin: 0 auto;
+    }
+
+    .btn-sweetalert {
+      background: linear-gradient(90deg, #7b6ef6 0%, #5f5fc4 100%);
+      color: #fff;
+      border: none;
+      border-radius: 25px;
+      padding: 12px 32px;
+      font-size: 1rem;
+      font-weight: bold;
+      box-shadow: 0 4px 12px rgba(123, 110, 246, 0.15);
+      cursor: pointer;
+      transition: background 0.3s, transform 0.2s;
+      margin-top: 16px;
+      outline: none;
+    }
+    .btn-sweetalert:hover {
+      background: linear-gradient(90deg, #5f5fc4 0%, #7b6ef6 100%);
+      transform: translateY(-2px) scale(1.04);
+      box-shadow: 0 6px 18px rgba(123, 110, 246, 0.25);
       height: 30px;
       background: #7b6ef6;
     }
 
+
     /* Ramificação */
-       .branch {
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      gap: 40px;
-      margin-top: -10px;
-    }
+      .branch {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 40px;
+        margin-top: -10px;
+        width: 100%;
+        position: relative;
+      }
 
     .branch .line {
       width: 2px;
-      height: 20px;
-      margin: 0 auto;
+      height: 32px;
+      background: #7b6ef6;
+      margin: 0 auto 10px auto;
     }
 
     .connector {
-      width: 100%;
+      width: 90%;
       height: 2px;
       background: #7b6ef6;
+      margin: 0 auto;
       position: relative;
-      top: 10px;
+      top: 0;
     }
 
     /* Modal */
@@ -81,13 +111,13 @@
 
     .modal-content {
         background: white;
-        padding: 20px; /* menos padding para telas pequenas */
+        padding: 20px; 
         border-radius: 12px;
-        max-width: 90%; /* antes estava 700px, agora 90% da tela */
-        width: 100%; /* garante que ocupe a largura disponível */
+        max-width: 90%; 
+        width: 100%; 
         text-align: center;
         position: relative;
-        overflow-x: auto; /* evita overflow horizontal */
+        overflow-x: auto; 
     }
 
     .close {
@@ -106,22 +136,22 @@
     /* Tabs */
     .tab-container {
         display: flex;
-        flex-wrap: wrap; /* permite quebrar em linhas em telas pequenas */
-        gap: 5px; /* espaço entre as abas */
+        flex-wrap: wrap; 
+        gap: 5px; 
         border-bottom: 2px solid #eee;
         margin-bottom: 20px;
     }
 
     .tab {
-        flex: 1 1 auto; /* flex-grow, flex-shrink, flex-basis */
-        min-width: 120px; /* garante que não fique muito pequeno */
+        flex: 1 1 auto; 
+        min-width: 120px; 
         padding: 8px;
         cursor: pointer;
         background: #f1f1f1;
         border-radius: 8px 8px 0 0;
         transition: 0.3s;
         text-align: center;
-        white-space: nowrap; /* evita que o texto quebre */
+        white-space: nowrap; 
     }
 
     .tab.active {

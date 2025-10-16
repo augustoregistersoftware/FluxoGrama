@@ -44,8 +44,7 @@
             <div class="line"></div>
             <div class="node" onclick="openSeoOnPage()">SEO On-Page</div>
             <div class="line"></div>
-            <div class="node" onclick="openModal('SEO Off-Page: estratégias externas de link building e parcerias')">SEO
-                Off-Page</div>
+            <div class="node" onclick="openSeoOffPage()">SEO Off-Page</div>
             <div class="line"></div>
             <div class="node"
                 onclick="openModal('Monitoramento e análise contínua de desempenho com Google Analytics, SEMrush, etc.')">
@@ -62,9 +61,9 @@
 
         <!-- Modal para informações mais complexas -->
         <!-- Modal SEO On-Page com Tabs -->
-        <div id="seoModal" class="modal">
+        <div id="seoModalOnPage" class="modal">
             <div class="modal-content">
-                <span class="close" onclick="closeSeoModal()">&times;</span>
+                <span class="close" onclick="closeSeoOnModal()">&times;</span>
                 <h2>SEO On-Page</h2>
                 <div class="tab-container">
                     <div class="tab active" onclick="openTab('flx1')">Mapeamento de Conteúdos para otimização SEO On-Page</div>
@@ -115,6 +114,32 @@
                  <div id="flx7_" class="tab-content">
                     <ul>
                     </ul>
+                </div>
+            </div>
+        </div>
+
+         <!-- Modal SEO Off-Page com Tabs -->
+        <div id="seoModalOffPage" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeSeoOffModal()">&times;</span>
+                <h2>SEO Off-Page</h2>
+                <div class="tab-container">
+                    <div class="tab active" onclick="openTab('floff1')">Início da Implementação de SEO Off-Page</div>
+                    <div class="tab" onclick="openTab('floff2')">Criação de Conteúdo Externo e Interno</div>
+                </div>
+                <div id="floff1_" class="tab-content active">
+                    <ul>
+                    </ul>
+                </div>
+                <div id="floff2" class="tab-content">
+                    <ul>
+                        <li>Criação de Conteúdo</li>
+                        <li>Objetivo: Criar conteúdo relevante e de alta qualidade para atrair backlinks, aumentar o tráfego do site e gerar engajamento com o público.</li>
+                        <li>Ações: Crie conteúdo original e informativo, que seja útil para o seu público-alvo. Utilize diferentes formatos de conteúdo, como artigos, vídeos, infográficos e ebooks. Promova o conteúdo criado em diferentes canais, como redes sociais, e-mail marketing e guest blogging.</li>
+                    </ul>
+                        <button id="btnconteudocomp" type="button" class="btn-sweetalert">Conteúdo Compartilhável</button>
+                        <button id="btnconteudocomp" type="button" class="btn-sweetalert">Guest Blogging</button>
+                        <button id="btnconteudocomp" type="button" class="btn-sweetalert">Colaboração com Parceiros</button>
                 </div>
             </div>
         </div>
