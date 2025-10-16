@@ -67,34 +67,53 @@
                 <span class="close" onclick="closeSeoModal()">&times;</span>
                 <h2>SEO On-Page</h2>
                 <div class="tab-container">
-                    <div class="tab active" onclick="openTab('estrutura')">📑 Estrutura</div>
-                    <div class="tab" onclick="openTab('otimizacao')">⚡ Otimização</div>
-                    <div class="tab" onclick="openTab('relatorios')">📊 Relatórios</div>
-                    <div class="tab" onclick="openTab('validacao')">🔍 Validação</div>
+                    <div class="tab active" onclick="openTab('flx1')">Mapeamento de Conteúdos para otimização SEO On-Page</div>
+                    <div class="tab" onclick="openTab('flx2')">Classificação e Organização de Informações por Prioridade SEO</div>
+                    <div class="tab" onclick="openTab('flx3')">Aplicar Otimização de Meta Tags por Categoria de Conteúdo (dinâmica)</div>
+                    <div class="tab" onclick="openTab('flx4')">Criação de Templates de SEO por Tipo de Documento</div>
+                    <div class="tab" onclick="openTab('flx5')">Integração de Keywords nos Textos e Seções (Títulos, Subtítulos, etc.)</div>
+                    <div class="tab" onclick="openTab('flx6')">Geração de Relatórios de SEO e Otimização de Conteúdo</div>
+                    <div class="tab" onclick="openTab('flx7')">Validação Técnica de SEO (Monitoramento inicial)</div>
                 </div>
-                <div id="estrutura" class="tab-content active">
+                <div id="flx1" class="tab-content active">
                     <ul>
                         <li>Mapeamento de Conteúdos</li>
-                        <li>Classificação e Organização de Informações</li>
+                        <li>Objetivo: Mapear os conteúdos existentes e planejar novos conteúdos com base nas palavras-chave selecionadas e nas necessidades do público.</li>
+                        <li>Ações: Realize um inventário dos conteúdos existentes e classifique-os por tema e relevância. Identifique lacunas de conteúdo e planeje a criação de novos materiais que atendam às necessidades do público e explorem as palavras-chave prioritárias.</li>
                     </ul>
                 </div>
-                <div id="otimizacao" class="tab-content">
+                <div id="flx2" class="tab-content">
                     <ul>
-                        <li>Aplicar Otimização de Meta Tags</li>
-                        <li>Criação de Templates de SEO</li>
-                        <li>Integração de Keywords em Textos</li>
+                        <li>Classificação e Organização</li>
+                        <li>Objetivo: Classificar e organizar as informações de forma lógica e estruturada, utilizando as palavras-chave como guia.</li>
+                        <li>Ações: Crie categorias e subcategorias de conteúdo. Utilize as palavras-chave para nomear as categorias e organizar os conteúdos de forma hierárquica. Utilize tags e metadados para facilitar a busca e a recuperação de informações.</li>
                     </ul>
                 </div>
-                <div id="relatorios" class="tab-content">
+                <div id="flx3_" class="tab-content">
                     <ul>
-                        <li>Geração de Relatórios de SEO</li>
-                        <li>Relatórios para Otimização de Conteúdo</li>
+                        <li></li>
                     </ul>
                 </div>
-                <div id="validacao" class="tab-content">
+                <div id="flx4" class="tab-content">
                     <ul>
-                        <li>Validação Técnica de SEO</li>
-                        <li>Monitoramento Inicial</li>
+                        <li>Criação de Templates</li>
+                        <li>Objetivo: Criar templates de SEO para diferentes tipos de documentos, garantindo a padronização e a otimização do conteúdo.</li>
+                        <li>Ações: Crie templates para artigos, notícias, páginas de produtos, etc. Inclua nos templates campos para preenchimento de meta tags, títulos otimizados e palavras-chave relevantes.</li>
+                    </ul>
+                </div>
+                 <div id="flx5_" class="tab-content">
+                    <ul>
+                    </ul>
+                </div>
+                 <div id="flx6" class="tab-content">
+                    <ul>
+                        <li>Geração de Relatórios</li>
+                        <li>Objetivo: Gerar relatórios de SEO e otimização de conteúdo para acompanhar o progresso e identificar áreas de melhoria.</li>
+                        <li>Ações: Utilize ferramentas de análise de SEO para gerar relatórios sobre o desempenho das palavras-chave, o tráfego do site, os backlinks e outras métricas relevantes. Utilize os relatórios para identificar os pontos fortes e fracos da sua estratégia e tomar decisões estratégicas.</li>
+                    </ul>
+                </div>
+                 <div id="flx7_" class="tab-content">
+                    <ul>
                     </ul>
                 </div>
             </div>

@@ -80,13 +80,14 @@
     }
 
     .modal-content {
-      background: white;
-      padding: 30px;
-      border-radius: 12px;
-      max-width: 700px;
-      width: 90%;
-      text-align: center;
-      position: relative;
+        background: white;
+        padding: 20px; /* menos padding para telas pequenas */
+        border-radius: 12px;
+        max-width: 90%; /* antes estava 700px, agora 90% da tela */
+        width: 100%; /* garante que ocupe a largura disponível */
+        text-align: center;
+        position: relative;
+        overflow-x: auto; /* evita overflow horizontal */
     }
 
     .close {
@@ -104,18 +105,23 @@
 
     /* Tabs */
     .tab-container {
-      display: flex;
-      border-bottom: 2px solid #eee;
-      margin-bottom: 20px;
+        display: flex;
+        flex-wrap: wrap; /* permite quebrar em linhas em telas pequenas */
+        gap: 5px; /* espaço entre as abas */
+        border-bottom: 2px solid #eee;
+        margin-bottom: 20px;
     }
 
     .tab {
-      flex: 1;
-      padding: 10px;
-      cursor: pointer;
-      background: #f1f1f1;
-      border-radius: 8px 8px 0 0;
-      transition: 0.3s;
+        flex: 1 1 auto; /* flex-grow, flex-shrink, flex-basis */
+        min-width: 120px; /* garante que não fique muito pequeno */
+        padding: 8px;
+        cursor: pointer;
+        background: #f1f1f1;
+        border-radius: 8px 8px 0 0;
+        transition: 0.3s;
+        text-align: center;
+        white-space: nowrap; /* evita que o texto quebre */
     }
 
     .tab.active {
@@ -131,5 +137,20 @@
 
     .tab-content.active {
       display: block;
+    }
+
+    /* Para telas pequenas */
+    @media (max-width: 500px) {
+        .modal-content {
+            padding: 15px;
+        }
+        .tab {
+            font-size: 12px;
+            padding: 6px;
+            min-width: 100px;
+        }
+        .tab-container {
+            gap: 3px;
+        }
     }
   </style>
