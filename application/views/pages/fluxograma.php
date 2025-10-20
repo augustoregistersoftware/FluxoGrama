@@ -138,8 +138,8 @@
                         <li>Ações: Crie conteúdo original e informativo, que seja útil para o seu público-alvo. Utilize diferentes formatos de conteúdo, como artigos, vídeos, infográficos e ebooks. Promova o conteúdo criado em diferentes canais, como redes sociais, e-mail marketing e guest blogging.</li>
                     </ul>
                         <button id="btnconteudocomp" type="button" class="btn-sweetalert">Conteúdo Compartilhável</button>
-                        <button id="btnconteudocomp" type="button" class="btn-sweetalert">Guest Blogging</button>
-                        <button id="btnconteudocomp" type="button" class="btn-sweetalert">Colaboração com Parceiros</button>
+                        <button id="btnconteudoblogging" type="button" class="btn-sweetalert">Guest Blogging</button>
+                        <button id="btnconteudocolab" type="button" class="btn-sweetalert">Colaboração com Parceiros</button>
                 </div>
             </div>
         </div>
