@@ -31,6 +31,16 @@
     document.getElementById('seoModalOffPage').style.display = 'none';
   }
 
+  function openSidebar() {
+    document.getElementById("mySidebar").style.width = "250px";
+    document.querySelector('.content').style.marginLeft = "250px";
+  }
+
+  function closeSidebar() {
+    document.getElementById("mySidebar").style.width = "0";
+    document.querySelector('.content').style.marginLeft = "0";
+  }
+
   document.getElementById('btnconteudocomp').addEventListener('click', function () {
     Swal.fire({
       title: "Conteúdo Compartilhável",
@@ -49,7 +59,7 @@
     });
   });
 
-    document.getElementById('btnconteudoblogging').addEventListener('click', function () {
+  document.getElementById('btnconteudoblogging').addEventListener('click', function () {
     Swal.fire({
       title: "Guest Blogging",
       showDenyButton: true,
@@ -63,26 +73,26 @@
       } else if (result.isDenied) {
         Swal.fire("Maior Autoridade", "Objetivo: Aumentar a autoridade da sua organização e a visibilidade da sua marca através de ações de SEO Off-Page. <br>Ações: Construa backlinks de alta qualidade, participe de eventos e publique conteúdo relevante em sites e blogs do seu setor. Promova a sua marca nas redes sociais e interaja com o seu público.", "info");
       }
-      });
     });
+  });
 
-    document.getElementById('btnconteudocolab').addEventListener('click', function () {
+  document.getElementById('btnconteudocolab').addEventListener('click', function () {
     Swal.fire({
-        title: "Colaboração com Parceiros",
-        html: "Objetivo: Estabelecer parcerias com outras empresas e influenciadores do seu setor para promover o seu conteúdo e gerar backlinks. <br>Ações: Identifique potenciais parceiros que possuem público-alvo similar ao seu. Crie campanhas de co-marketing, participe de eventos conjuntos e promova o conteúdo uns dos outros.",
-        showDenyButton: true,
-        showCancelButton: true,
-        confirmButtonText: "Obtenção de Backlinks de Alta Qualidade",
-        denyButtonText: `Integração em Plataformas de Bookmarking`
-      }).then((result) => {
-        /* Read more about isConfirmed, isDenied below */
-        if (result.isConfirmed) {
-          Swal.fire("Obtenção de Backlinks", "Objetivo: Obter backlinks de alta qualidade de sites relevantes do seu setor para aumentar a autoridade do seu site e melhorar o seu ranqueamento nos mecanismos de busca. <br>Ações: Utilize diferentes estratégias de link building, como guest blogging, divulgação de conteúdo em diretórios e fóruns, criação de infográficos e construção de relacionamentos com outros sites. Concentre-se em obter backlinks de sites com alta autoridade e relevância para o seu nicho.", "info");
-        } else if (result.isDenied) {
-          Swal.fire("Integração em Plataformas", "Objetivo: Integrar o seu conteúdo em plataformas de bookmarking, para aumentar a visibilidade e gerar tráfego para o site. <br>Ações: Adicione os seus conteúdos mais relevantes. Utilize tags e descrições relevantes para facilitar a busca e o acesso ao seu conteúdo.", "info");
-        }
-        });
+      title: "Colaboração com Parceiros",
+      html: "Objetivo: Estabelecer parcerias com outras empresas e influenciadores do seu setor para promover o seu conteúdo e gerar backlinks. <br>Ações: Identifique potenciais parceiros que possuem público-alvo similar ao seu. Crie campanhas de co-marketing, participe de eventos conjuntos e promova o conteúdo uns dos outros.",
+      showDenyButton: true,
+      showCancelButton: true,
+      confirmButtonText: "Obtenção de Backlinks de Alta Qualidade",
+      denyButtonText: `Integração em Plataformas de Bookmarking`
+    }).then((result) => {
+      /* Read more about isConfirmed, isDenied below */
+      if (result.isConfirmed) {
+        Swal.fire("Obtenção de Backlinks", "Objetivo: Obter backlinks de alta qualidade de sites relevantes do seu setor para aumentar a autoridade do seu site e melhorar o seu ranqueamento nos mecanismos de busca. <br>Ações: Utilize diferentes estratégias de link building, como guest blogging, divulgação de conteúdo em diretórios e fóruns, criação de infográficos e construção de relacionamentos com outros sites. Concentre-se em obter backlinks de sites com alta autoridade e relevância para o seu nicho.", "info");
+      } else if (result.isDenied) {
+        Swal.fire("Integração em Plataformas", "Objetivo: Integrar o seu conteúdo em plataformas de bookmarking, para aumentar a visibilidade e gerar tráfego para o site. <br>Ações: Adicione os seus conteúdos mais relevantes. Utilize tags e descrições relevantes para facilitar a busca e o acesso ao seu conteúdo.", "info");
+      }
     });
+  });
 
 
   function openTab(tabId) {
