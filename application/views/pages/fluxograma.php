@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="/fluxograma/imagens/icone.png">
     <title>Fluxograma SEO</title>
 </head>
 
@@ -11,6 +12,8 @@
     <h1>Fluxograma Completo</h1>
     <div class="flowchart">
         <div class="node" onclick="openModal('Início','Este é o ponto de partida para integrar as práticas de SEO à gestão da informação na sua organização. O objetivo é otimizar a organização, recuperação e disseminação de informações, tanto para usuários internos quanto externos, através de um processo estruturado e contínuo.')">Início</div>
+        <div class="line"></div>
+        <div class="node" onclick="openModal('Levantamento das Necessidades Informacionais','Identificar, através de reuniões e entrevistas com as partes interessadas, as principais demandas de informação dentro da organização.')">Levantamento das Necessidades Informacionais</div>
         <div class="line"></div>
         <div class="node" onclick="openModal('Identificação de Palavras-Chave','Objetivo: Identificar os termos mais relevantes que os usuários utilizam para buscar informações relacionadas ao seu negócio, área de atuação ou setor. \n\nAções: Utilize ferramentas de pesquisa de palavras-chave como Google Keyword Planner, SEMrush e Ahrefs. Analise os termos mais buscados nos sistemas de informação da organização e realize pesquisas com usuários para entender suas necessidades informacionais.')">Identificação de Palavras-Chave (Ferramentas de SEO)</div>
         <div class="line"></div>
