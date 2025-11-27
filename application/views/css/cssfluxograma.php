@@ -1,13 +1,91 @@
- <style>
-
-
+<style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background: #f7f8fc;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 30px;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+
+    /* Sidebar Styles */
+    .sidebar {
+        height: 100%;
+        width: 250px;
+        position: fixed;
+        z-index: 1000;
+        top: 0;
+        left: -250px; /* Hidden by default on all screens */
+        background-color: #ffffff;
+        overflow-x: hidden;
+        padding-top: 60px;
+        box-shadow: 2px 0 5px rgba(0,0,0,0.05);
+        transition: 0.3s;
+    }
+
+    .sidebar.active {
+        left: 0;
+    }
+
+    .sidebar-menu {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .sidebar-menu li {
+        padding: 8px 16px;
+    }
+
+    .sidebar-menu li a {
+        text-decoration: none;
+        font-size: 18px;
+        color: #555;
+        display: block;
+        padding: 12px 16px;
+        border-radius: 8px;
+        transition: 0.3s;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .sidebar-menu li a:hover {
+        background-color: #f0f0f5;
+        color: #7b6ef6;
+    }
+
+    .sidebar-menu li a i {
+        width: 24px;
+        text-align: center;
+    }
+
+    /* Main Content Styles */
+    .main-content {
+        margin-left: 0; /* Centered by default */
+        padding: 30px;
+        transition: margin-left 0.3s;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* Hamburger Button */
+    .hamburger-btn {
+        display: block; /* Visible on all screens */
+        position: fixed;
+        top: 15px;
+        left: 15px;
+        z-index: 1001;
+        background: none;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+        color: #333;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: rgba(255, 255, 255, 0.8);
     }
 
     h1 {
@@ -169,36 +247,48 @@
       display: block;
     }
 
-    /* Para telas pequenas */
-  /* Responsividade - tablets */
-  @media (max-width: 768px) {
-    body {
-      padding: 20px;
+    /* Responsividade - tablets e celulares */
+    @media (max-width: 768px) {
+        /* Overlay effect when sidebar is open */
+        body.sidebar-open {
+            overflow: hidden;
+        }
+        
+        body.sidebar-open::after {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+            z-index: 999;
+        }
+
+        h1 {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .node {
+            padding: 12px 18px;
+            margin: 12px 0;
+            min-width: 160px;
+            font-size: 0.95rem;
+        }
+        .line {
+            height: 24px;
+        }
+        .branch {
+            gap: 18px;
+        }
+        .connector {
+            width: 95%;
+        }
+        .btn-sweetalert {
+            padding: 10px 24px;
+            font-size: 0.95rem;
+        }
     }
-    h1 {
-      font-size: 18px;
-      margin-bottom: 20px;
-    }
-    .node {
-      padding: 12px 18px;
-      margin: 12px 0;
-      min-width: 160px;
-      font-size: 0.95rem;
-    }
-    .line {
-      height: 24px;
-    }
-    .branch {
-      gap: 18px;
-    }
-    .connector {
-      width: 95%;
-    }
-    .btn-sweetalert {
-      padding: 10px 24px;
-      font-size: 0.95rem;
-    }
-  }
 
   /* Responsividade - celulares */
   @media (max-width: 420px) {

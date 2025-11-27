@@ -5,19 +5,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/x-icon" href="/fluxograma/imagens/icone.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <title>Fluxograma SEO</title>
 </head>
 
 <body>
-    <h1>Fluxograma Completo</h1>
-    <div class="flowchart">
-        <div class="node" onclick="openModal('Início','Este é o ponto de partida para integrar as práticas de SEO à gestão da informação na sua organização. O objetivo é otimizar a organização, recuperação e disseminação de informações, tanto para usuários internos quanto externos, através de um processo estruturado e contínuo.')">Início</div>
-        <div class="line"></div>
-        <div class="node" onclick="openModal('Levantamento das Necessidades Informacionais','Identificar, através de reuniões e entrevistas com as partes interessadas, as principais demandas de informação dentro da organização.')">Levantamento das Necessidades Informacionais</div>
-        <div class="line"></div>
-        <div class="node" onclick="openModal('Identificação de Palavras-Chave','Objetivo: Identificar os termos mais relevantes que os usuários utilizam para buscar informações relacionadas ao seu negócio, área de atuação ou setor. \n\nAções: Utilize ferramentas de pesquisa de palavras-chave como Google Keyword Planner, SEMrush e Ahrefs. Analise os termos mais buscados nos sistemas de informação da organização e realize pesquisas com usuários para entender suas necessidades informacionais.')">Identificação de Palavras-Chave (Ferramentas de SEO)</div>
-        <div class="line"></div>
+
+    <!-- Hamburger Button -->
+    <button class="hamburger-btn" onclick="toggleSidebar()">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <!-- Optional: Add Logo or Title here -->
+        </div>
+        <ul class="sidebar-menu">
+            <li><a href="#" onclick="showMenuInfo('Home')"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="#" onclick="showMenuInfo('Metodologia')"><i class="fas fa-book"></i> Metodologia</a></li>
+            <li><a href="#" onclick="showMenuInfo('Sobre')"><i class="fas fa-info-circle"></i> Sobre</a></li>
+            <li><a href="#" onclick="showMenuInfo('Referências')"><i class="fas fa-link"></i> Referências</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <h1>Fluxograma Completo</h1>
         <div class="flowchart">
+            <div class="node" onclick="openModal('Início','Este é o ponto de partida para integrar as práticas de SEO à gestão da informação na sua organização. O objetivo é otimizar a organização, recuperação e disseminação de informações, tanto para usuários internos quanto externos, através de um processo estruturado e contínuo.')">Início</div>
+            <div class="line"></div>
+            <div class="node" onclick="openModal('Levantamento das Necessidades Informacionais','Identificar, através de reuniões e entrevistas com as partes interessadas, as principais demandas de informação dentro da organização.')">Levantamento das Necessidades Informacionais</div>
+            <div class="line"></div>
+            <div class="node" onclick="openModal('Identificação de Palavras-Chave','Objetivo: Identificar os termos mais relevantes que os usuários utilizam para buscar informações relacionadas ao seu negócio, área de atuação ou setor. \n\nAções: Utilize ferramentas de pesquisa de palavras-chave como Google Keyword Planner, SEMrush e Ahrefs. Analise os termos mais buscados nos sistemas de informação da organização e realize pesquisas com usuários para entender suas necessidades informacionais.')">Identificação de Palavras-Chave (Ferramentas de SEO)</div>
+            <div class="line"></div>
             <div class="node" onclick="openModal('Análise de Tendências e Competitividade','Objetivo: Avaliar a relevância das palavras-chave identificadas, considerando as tendências de busca e a competitividade no mercado. \n\nAções: Utilize ferramentas como Google Trends para analisar as tendências de busca. Avalie o volume de buscas, a concorrência e a dificuldade de ranqueamento para cada palavra-chave. Identifique quais palavras-chave são mais promissoras para a sua estratégia.')">Análise de Tendências e Competitividade (Google Trends, etc.)</div>
             <div class="line"></div>
 
@@ -103,25 +123,25 @@
                         <li>Ações: Crie templates para artigos, notícias, páginas de produtos, etc. Inclua nos templates campos para preenchimento de meta tags, títulos otimizados e palavras-chave relevantes.</li>
                     </ul>
                 </div>
-                 <div id="flx5_" class="tab-content">
+                    <div id="flx5_" class="tab-content">
                     <ul>
                     </ul>
                 </div>
-                 <div id="flx6" class="tab-content">
+                    <div id="flx6" class="tab-content">
                     <ul>
                         <li>Geração de Relatórios</li>
                         <li>Objetivo: Gerar relatórios de SEO e otimização de conteúdo para acompanhar o progresso e identificar áreas de melhoria.</li>
                         <li>Ações: Utilize ferramentas de análise de SEO para gerar relatórios sobre o desempenho das palavras-chave, o tráfego do site, os backlinks e outras métricas relevantes. Utilize os relatórios para identificar os pontos fortes e fracos da sua estratégia e tomar decisões estratégicas.</li>
                     </ul>
                 </div>
-                 <div id="flx7_" class="tab-content">
+                    <div id="flx7_" class="tab-content">
                     <ul>
                     </ul>
                 </div>
             </div>
         </div>
 
-         <!-- Modal SEO Off-Page com Tabs -->
+            <!-- Modal SEO Off-Page com Tabs -->
         <div id="seoModalOffPage" class="modal">
             <div class="modal-content">
                 <span class="close" onclick="closeSeoOffModal()">&times;</span>
@@ -147,6 +167,7 @@
             </div>
         </div>
 
+    </div> <!-- End main-content -->
 </body>
 
 </html>
